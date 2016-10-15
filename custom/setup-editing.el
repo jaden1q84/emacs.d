@@ -306,11 +306,11 @@ Position the cursor at it's beginning, according to the current mode."
   (tabbar-mode 1)
   )
 
-;; lookup tags
-(global-set-key (kbd "<f7>") 'helm-gtags-select)
-
 ;; lookup files
 (global-set-key (kbd "<f6>") 'helm-projectile-find-file)
+
+;; lookup tags
+(global-set-key (kbd "<f7>") 'helm-gtags-select)
 
 ;; sr-speedbar
 (use-package sr-speedbar
