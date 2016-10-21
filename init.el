@@ -52,10 +52,11 @@
    (quote
     (color-theme markdown-mode+ markdown-preview-eww markdown-preview-mode sr-speedbar markdown-mode fiplr company-c-headers desktop+ helm-smex smex workgroups2 popwin dired+ neotree tabbar recentf-ext color-theme-sanityinc-solarized color-theme-sanityinc-tomorrow color-theme-solarized evil evil-leader evil-nerd-commenter zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
  '(scroll-bar-mode nil)
+ '(semantic-sb-info-format-tag-function (quote semantic-format-tag-name))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "YaHei Consolas Hybrid" :foundry "outline" :slant normal :weight normal :height 105 :width normal)))))

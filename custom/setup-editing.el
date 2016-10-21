@@ -316,9 +316,12 @@ Position the cursor at it's beginning, according to the current mode."
 (use-package sr-speedbar
   :init
   (global-set-key (kbd "<f2>") 'sr-speedbar-toggle)
+  (setq sr-speedbar-right-side nil)
   )
 
 (electric-pair-mode t)
 (electric-layout-mode t)
+
+(setq markdown-command "multimarkdown")
 
 (provide 'setup-editing)
