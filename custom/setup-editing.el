@@ -317,11 +317,14 @@ Position the cursor at it's beginning, according to the current mode."
   :init
   (global-set-key (kbd "<f2>") 'sr-speedbar-toggle)
   (setq sr-speedbar-right-side nil)
+  (setq speedbar-tag-hierarchy-method nil)
   )
 
 (electric-pair-mode t)
 (electric-layout-mode t)
 
 (setq markdown-command "multimarkdown")
+
+;; (require 'doxymacs)
 
 (provide 'setup-editing)
