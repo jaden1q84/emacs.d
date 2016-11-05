@@ -4,7 +4,7 @@
   (global-evil-leader-mode 1)
   (evil-leader/set-key
    "b" 'switch-to-buffer
-   "k" 'kill-buffer
+   "k" 'kill-buffer-and-window
    "gd" 'helm-gtags-dwim
    "gr" 'helm-gtags-find-rtag
    "ci" 'evilnc-comment-or-uncomment-lines
