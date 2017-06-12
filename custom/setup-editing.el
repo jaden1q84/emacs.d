@@ -327,6 +327,11 @@ Position the cursor at it's beginning, according to the current mode."
 (electric-pair-mode t)
 (electric-layout-mode t)
 
+(imenu-list-minor-mode)
+(global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
+(setq imenu-list-auto-resize t)
+(setq imenu-list-size 0.2)
+
 (setq markdown-command "multimarkdown")
 
 ;; (require 'doxymacs)
