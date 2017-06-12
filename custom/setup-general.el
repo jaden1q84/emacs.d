@@ -57,4 +57,11 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (windmove-default-keybindings)
 
+(setq exec-path (append exec-path '("/usr/local/bin")))
+
+;; 设置时间显示为24小时制，否则为12小时制
+(setq display-time-24hr-format 't)
+;; 显示时间
+(display-time)
+
 (provide 'setup-general)

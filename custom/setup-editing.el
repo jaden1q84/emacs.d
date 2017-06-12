@@ -306,6 +306,9 @@ Position the cursor at it's beginning, according to the current mode."
   (tabbar-mode 1)
   )
 
+;; turn on highlighting current line
+(global-hl-line-mode 1)
+
 ;; lookup files
 (global-set-key (kbd "<f6>") 'helm-projectile-find-file)
 
@@ -318,6 +321,7 @@ Position the cursor at it's beginning, according to the current mode."
   (global-set-key (kbd "<f2>") 'sr-speedbar-toggle)
   (setq sr-speedbar-right-side nil)
   (setq speedbar-tag-hierarchy-method nil)
+  (setq speedbar-show-unknown-files t)
   )
 
 (electric-pair-mode t)
